@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    type: org.apache.commons.dbcp2.BasicDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://manage-user.c1obcbwtbeyv.ap-southeast-1.rds.amazonaws.com:3306/beniplus?autoReconnect=true&serverTimezone=UTC
+    username: admin
+    password: 9fH92YLzpJ0r
+    dbcp2:
+      initial-size: 1
+      max-total: 10
+      max-idle: 7
+      min-idle: 2
+  jpa:
+    hibernate.ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
